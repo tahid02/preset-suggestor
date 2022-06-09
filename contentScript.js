@@ -11,10 +11,19 @@
   const selectPresetBtn = document.createElement("button");
   selectPresetBtn.innerText = "select preset from here";
   const presetNameListUl = document.createElement("ul");
+  presetNameListUl.style.position = "absolute";
+
   //   const presetLi = document.createElement("li");
   dropdownDiv.appendChild(selectPresetBtn);
   dropdownDiv.appendChild(presetNameListUl);
   main.prepend(dropdownDiv);
+  presetNameListUl.addEventListener("click", function (e) {
+    console.log(e.target.innerText);
+  });
+  presetNameListUl.style.display = "none";
+  selectPresetBtn.addEventListener("click", function () {
+    presetNameListUl.style.display = "block";
+  });
 
   console.log(presetNameListUl);
   chrome.storage.sync.get("allPresets", (obj) => {
@@ -27,6 +36,10 @@
         console.log(presetDescription);
         let itemBtn = document.createElement("button");
         itemBtn.innerText = presetName;
+
+        itemBtn.addEventListener("click", function () {
+          presetNameListUl.style.display = "none";
+        });
         presetNameListUl.appendChild(itemBtn);
       });
     } else {
