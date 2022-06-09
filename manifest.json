@@ -10,7 +10,8 @@
   "content_scripts": [
     {
       "matches": ["https://*.paybright.com/*"],
-      "js": ["contentScript.js"]
+      "js": ["contentScript.js"],
+      "css": ["dropdown.css"]
     }
   ],
   "web_accessible_resources": [
