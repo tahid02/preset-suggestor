@@ -3,15 +3,17 @@
   "version": "0.1.0",
   "description": "saving preset and showing dropdown to fasten the up proposal",
   "permissions": ["storage", "tabs"],
-  "host_permissions": ["https://*.upwork.com/*"],
+  "host_permissions": ["https://www.upwork.com/ab/proposals/job/*"],
   "background": {
     "service_worker": "background.js"
   },
   "content_scripts": [
     {
-      "matches": ["https://*.paybright.com/*"],
+      "matches": ["https://www.upwork.com/ab/proposals/job/*"],
       "js": ["contentScript.js"],
-      "css": ["dropdown.css"]
+      "css": ["dropdown.css"],
+      "all_frames": true,
+      "run_at": "document_end"
     }
   ],
   "web_accessible_resources": [
