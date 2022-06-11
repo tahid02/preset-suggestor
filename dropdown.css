@@ -1,11 +1,11 @@
 .select-menu {
   max-width: 330px;
-  margin: 50px auto;
+  /* margin: 50px auto; */
 }
 .select-menu .select-btn {
   display: flex;
-  height: 55px;
-
+  height: auto;
+  width: 30vw;
   background: #fff;
   padding: 20px;
   font-size: 18px;
@@ -15,6 +15,7 @@
   cursor: pointer;
   justify-content: space-between;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 .select-btn i {
   font-size: 25px;

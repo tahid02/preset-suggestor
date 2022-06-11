@@ -7,11 +7,42 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="dropdownBtn">
-      <button id="selectBtn">select here</button>
-      <ul id="lists">
-        <li id="list"></li>
-      </ul>
+    <div
+      style="
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+      "
+      id="ext_textDropdown"
+    >
+      <div
+        style="
+          display: flex;
+          align-items: flex-end;
+          font-size: 0.9rem;
+          font-weight: 500;
+        "
+      >
+        <div>cover letter</div>
+      </div>
+      <div class="select-menu">
+        <div
+          class="select-btn"
+          style="background-color: #fac213; border: 1px solid black"
+        >
+          <span class="sBtn-text">Select a cover letter preset</span>
+          <img
+            src="https://www.iconpacks.net/icons/2/free-arrow-down-icon-3101-thumb.png"
+            style="width: 1rem"
+            alt="arrow"
+          />
+        </div>
+
+        <ul
+          class="options"
+          style="height: 30vh; overflow-y: scroll; position: absolute"
+        ></ul>
+      </div>
     </div>
   </body>
 </html>

@@ -6,29 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="popup.css" rel="stylesheet" type="text/css" />
     <title>Document</title>
-    <script type="module" src="popup.js"></script>
+    <link rel="stylesheet" href="popup.css" />
   </head>
-  <body>
+  <body style="min-width: 500px; margin: 0; padding: 1rem">
     <div class="container">
       <div>
-        <div class="title">manage your presets</div>
         <!-- input filed start -->
         <div id="preset_create_input">
           <label>name</label>
-          <input type="text" name="preset_name" id="preset_name" />
+          <br />
+          <input
+            type="text"
+            name="preset_name"
+            id="preset_name"
+            style="width: 400px"
+          />
+          <br />
           <label>description </label>
+          <br />
           <textarea
             type="text"
             name="preset_description"
             id="preset_description"
+            style="width: 500px; height: 300px"
           ></textarea>
-          <button id="add_preset">add</button>
+          <div class="select-btn"></div>
+          <div style="text-align: center">
+            <button
+              id="add_preset"
+              style="
+                cursor: pointer;
+                background-color: #fac213;
+                border: 1px solid black;
+                padding: 0.6rem 1rem;
+                width: 40vw;
+                font-size: large;
+                border-radius: 2rem;
+              "
+            >
+              Add a preset
+            </button>
+          </div>
+          <br />
+          <div style="text-align: center">
+            <button
+              id="manage_preset"
+              style="
+                cursor: pointer;
+                background-color: #fac213;
+                border: 1px solid black;
+                padding: 0.6rem 1rem;
+                width: 40vw;
+                font-size: large;
+                border-radius: 2rem;
+              "
+            >
+              Manage presets
+            </button>
+          </div>
         </div>
         <!-- input filed end -->
-        <button id="create_preset">crate preset</button>
-        <!-- show all the presets in this div -->
-        <div class="presets" id="presets">hello</div>
+        <!-- accordion item -->
+        <div class="accordionWrapper"></div>
       </div>
     </div>
+    <script type="module" src="popup.js"></script>
   </body>
 </html>
