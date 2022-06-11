@@ -5,7 +5,7 @@
 .select-menu .select-btn {
   display: flex;
   height: auto;
-  width: 30vw;
+  width: 100%;
   background: #fff;
   padding: 20px;
   font-size: 18px;
@@ -36,6 +36,7 @@
 .select-menu.active .options {
   display: block;
   opacity: 0;
+  width: 100%;
   animation-name: fadeInUp;
   -webkit-animation-name: fadeInUp;
   animation-duration: 0.4s;
@@ -45,7 +46,7 @@
 }
 .options .option {
   display: flex;
-  height: 55px;
+  height: auto;
   cursor: pointer;
   padding: 0 16px;
   border-radius: 8px;
@@ -71,5 +72,13 @@
   to {
     transform: translate3d(0, 0, 0);
     opacity: 1;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .select-menu .select-btn {
+    width: 100%;
+  }
+  .select-menu.active .options {
+    width: 20%;
   }
 }
