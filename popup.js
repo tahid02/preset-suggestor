@@ -128,7 +128,7 @@ function allPreset() {
             console.log({ obj });
             let current = obj.allPresets;
             const filteredPresets = current.filter((pre) => {
-              return pre.presetName !== selectedHD;
+              return pre.presetName.trim() !== selectedHD.trim();
             });
             console.log({ filteredPresets });
             chrome.storage.sync.set(

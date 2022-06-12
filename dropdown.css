@@ -1,3 +1,6 @@
+* {
+  margin: 0%;
+}
 .select-menu {
   max-width: 330px;
   /* margin: 50px auto; */
@@ -5,7 +8,7 @@
 .select-menu .select-btn {
   display: flex;
   height: auto;
-  width: 100%;
+  width: 20rem;
   background: #fff;
   padding: 20px;
   font-size: 18px;
@@ -36,7 +39,7 @@
 .select-menu.active .options {
   display: block;
   opacity: 0;
-  width: 100%;
+  width: 20rem;
   animation-name: fadeInUp;
   -webkit-animation-name: fadeInUp;
   animation-duration: 0.4s;
@@ -52,6 +55,7 @@
   border-radius: 8px;
   align-items: center;
   background: #fff;
+  /* margin: 0%; */
 }
 .options .option:hover {
   background: #f2f2f2;
@@ -72,13 +76,5 @@
   to {
     transform: translate3d(0, 0, 0);
     opacity: 1;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  .select-menu .select-btn {
-    width: 100%;
-  }
-  .select-menu.active .options {
-    width: 20%;
   }
 }
