@@ -2,17 +2,28 @@
 const presetName = document.getElementById("preset_name");
 const presetDescription = document.getElementById("preset_description");
 const addPreset = document.getElementById("add_preset");
+const presetCreateInput = document.getElementById("preset_create_input");
+const createPreset = document.getElementById("create_preset");
 const managePreset = document.getElementById("manage_preset");
 const accWrapper = document.getElementsByClassName("accordionWrapper")[0];
+
+presetCreateInput.style.display = "none";
 accWrapper.style.display = "none";
+createPreset.addEventListener("click", function () {
+  presetCreateInput.style.display = "block";
+  createPreset.style.display = "none";
+  accWrapper.style.display = "none";
+});
 managePreset.addEventListener("click", function () {
-  // accWrapper.style.display = "block";
+  presetCreateInput.style.display = "none";
+  createPreset.style.display = "block";
   if (accWrapper.style.display === "none") {
     accWrapper.style.display = "block";
   } else {
     accWrapper.style.display = "none";
   }
 });
+
 addPreset.addEventListener("click", function () {
   console.log("add clicked");
 
