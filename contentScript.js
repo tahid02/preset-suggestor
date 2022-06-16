@@ -14,12 +14,12 @@
               <div>Cover Letter</div>
             </div>
             <div class="select-menu" style="position:relative">
-                <div class="select-btn" style="background-color:#FAC213;border:1px solid black">
-                  <span class="sBtn-text" style="padding-right:1rem">Select a cover letter preset</span>
+                <div class="select-btn" style="background-color:#ffffff;">
+                  <span class="sBtn-text" style="padding-right:1rem">Select a preset</span>
                     <img src="https://www.iconpacks.net/icons/2/free-arrow-down-icon-3101-thumb.png" style="width:1rem ; " alt="arrow" />
                 </div>
 
-                <ul class="options" style="height:30vh;overflow-y:scroll;position:absolute" >
+                <ul class="options" style="position:absolute" >
 
                 </ul>
               </div>

@@ -89,7 +89,7 @@ function allPreset() {
                                 }</span>  
                                 
                                   <img 
-                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVvR826mwqgrKTSSKHwZLTm5NeW8kuJxGJzmp47Gf61bLbT771ClofEPJd7ERcB62njwI&usqp=CAU"
+                                    src="https://spng.pngfind.com/pngs/s/99-992375_png-file-delete-icon-svg-transparent-png.png"
                                     alt="delete" 
                                     style="width:15px;height:15px"
                                     class="accordionDelete"
@@ -97,7 +97,8 @@ function allPreset() {
                               </h2>
                               <div class="accordionItemContent">
                                 <button class="copy_cover_letter">copy</button>
-                                <p style="font-size:1rem">
+                                <p style="font-size: 14px;
+                                font-weight: 400;">
                                 ${obj.allPresets[index].presetDescription}
                                 </p>
                               </div>
@@ -162,7 +163,7 @@ function allPreset() {
         navigator.clipboard.writeText(clickedCopyBtn);
       }
     } else {
-      wrapper.innerHTML = `<h2 style="text-align:center"> "No preset added yet"</h2>`;
+      wrapper.innerHTML = `<p style="text-align:center;font-size:14px"> "No preset added yet"</p>`;
     }
   });
 }
